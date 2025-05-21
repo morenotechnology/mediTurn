@@ -1,0 +1,148 @@
+.dashboard {
+  padding: 2rem;
+  background: linear-gradient(to right, #f4f7ff, #eaf1fb);
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  .stat {
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+
+    p {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 0.3rem;
+    }
+
+    span {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2d6cdf;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .nuevo {
+    background: #3dc86f;
+    color: white;
+
+    &:hover {
+      background: #33b060;
+    }
+
+    &:disabled {
+      background: #b5e1c7;
+      cursor: not-allowed;
+    }
+  }
+
+  .pausar {
+    background: #f5a623;
+    color: white;
+
+    &:hover {
+      background: #e09110;
+    }
+  }
+
+  .atender {
+    background: #4a4efc;
+    color: white;
+
+    &:hover {
+      background: #3539d7;
+    }
+  }
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    color: #2c3e50;
+  }
+
+  p {
+    margin: 0.2rem 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+}
+
+.timeBox {
+  background: #6c63ff;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  align-self: center;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+
+  svg {
+    font-size: 1.2rem;
+    color: #6c63ff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #4a4efc;
+    }
+  }
+}
